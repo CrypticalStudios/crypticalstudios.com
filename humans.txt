@@ -1,0 +1,14 @@
+/* TEAM */
+
+  Ali
+  https://github.com/aliblackwell
+
+  Matt
+  https://github.com/mattlinares
+
+/* THANKS */
+
+  Icon Design: Pablo Rozenberg
+  URL: https://thenounproject.com/pabslabs/
+  License: Attribution 3.0 Unported (CC BY 3.0)
+  License URL: https://creativecommons.org/licenses/by/3.0/
