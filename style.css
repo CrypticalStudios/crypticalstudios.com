@@ -49,8 +49,6 @@ section {
   margin-top: 1rem;
 }
 
-
-
 @media screen and (min-width: 800px) {
   #what-we-do {
     width: 38.1953028430160692%;
@@ -63,7 +61,6 @@ section {
     float: left;
     min-height: 100%;
   }
-
 
   p {
     max-width: 34rem;
