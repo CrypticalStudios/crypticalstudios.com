@@ -12,15 +12,15 @@
 
       @import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre:700|Lato:300');
 
-      /* MailChimp Form Embed Code - Horizontal Super Slim - 12/16/2015 v10.7
-      Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
-
       :root {
         --font-family-A: 'Averia Serif Libre', cursive;
         --font-family-B: 'Lato', sans-serif;
         --color-text: rgb(240,240,240);
         --color-text-inverse: rgb(50,50,50);
       }
+
+      /* MailChimp Form Embed Code - Horizontal Super Slim - 12/16/2015 v10.7
+      Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
 
       #mc_embed_signup form {text-align:center; padding:10px 0 10px 0;}
       .mc-field-group { display: inline-block; } /* positions input field horizontally */
@@ -79,10 +79,10 @@
         padding: 1rem;
       }
 
-
       p {
         font-size: 1.25rem;
       }
+
       header {
         width: 100%;
         height: 100%;
@@ -200,27 +200,9 @@
 
       </section>
       <footer>
-        <a href="/humans.txt" title="Humans.txt">Attribution</h3>
+        <a href="/humans.txt" title="Humans.txt">Attribution</a></h3>
       </footer>
     </div>
-    <div id="background" class="bg-container"></div>
-
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script>
-      var background = document.getElementById('background');
-
-      // Fix background image jump on mobile
-      if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
-        background.style.top = 'auto';
-        background.style.bottom = 0;
-
-        window.onresize = sizeBackground;
-        sizeBackground();
-      }
-
-      function sizeBackground() {
-        background.style.height = screen.height;
-      }
-    </script>
   </body>
 </html>
