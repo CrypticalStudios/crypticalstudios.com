@@ -203,8 +203,24 @@
         <a href="/humans.txt" title="Humans.txt">Attribution</h3>
       </footer>
     </div>
-    <div class="bg-container"></div>
+    <div id="background" class="bg-container"></div>
 
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script>
+      var background = document.getElementById('background');
+
+      // Fix background image jump on mobile
+      if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+        background.style.top = 'auto';
+        background.style.bottom = 0;
+
+        window.onresize = sizeBackground;
+        sizeBackground();
+      }
+
+      function sizeBackground() {
+        background.style.height = screen.height;
+      }
+    </script>
   </body>
 </html>
