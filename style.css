@@ -94,6 +94,9 @@ footer {
 footer a {
   color: white;
 }
+.eth-address {
+  font-size: 0.8rem;
+}
 
 @media screen and (min-width: 800px) {
   .left-col {
