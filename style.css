@@ -55,6 +55,10 @@ a:hover {
   margin-bottom: 4rem;
 }
 
+.bio {
+  margin-bottom: 4rem;
+}
+
 #blog li > a:hover button {
   background: white;
   color: var(--color-text-inverse);
@@ -108,7 +112,7 @@ footer a {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
   p {
     max-width: 34rem;
   }
