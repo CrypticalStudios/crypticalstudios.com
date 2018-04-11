@@ -1,10 +1,23 @@
+html {
+  background-image:url('img/smartcities-blockchain.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height:100%;
+  overflow: scroll;
+}
+
 div.content-wrapper {
   display: block;
   width: 100%;
   height: 100%;
   min-height: 100%;
 }
-section {
+.left-col, .right-col {
   display: block;
   padding: 0 1rem;
   margin-bottom: 3rem;
@@ -20,16 +33,29 @@ section {
   float: left;
 }
 
-#blog li a {
+#blog li a  {
   display: inline;
   color: var(--color-text);
   text-decoration: none;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: white;
 }
 
 #blog li > a {
   display: block;
   width: 100%;
   float: left;
+  margin-bottom: 4rem;
+}
+
+.bio {
   margin-bottom: 4rem;
 }
 
@@ -49,21 +75,46 @@ section {
   margin-top: 1rem;
 }
 
+#who-we-are {
+  width: 100%;
+  float: left;
+  clear: both;
+}
 
+
+footer {
+  width: 100%;
+  clear: both;
+  display: block;
+  min-height: 5rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+.eth-address {
+  font-size: 0.8rem;
+}
 
 @media screen and (min-width: 800px) {
-  #what-we-do {
+  .left-col {
     width: 38.1953028430160692%;
     float: left;
     padding-right: 4rem;
   }
 
-  #blog {
+  .right-col {
     width: 61.8046971569839308%;
     float: left;
     min-height: 100%;
   }
 
+  .bg-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   p {
     max-width: 34rem;
