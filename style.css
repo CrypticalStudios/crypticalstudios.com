@@ -1,13 +1,19 @@
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
 html {
   background-image:url('img/smartcities-blockchain.jpg');
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
   height:100%;
- 
+  overflow: scroll;
 }
 
 div.content-wrapper {
