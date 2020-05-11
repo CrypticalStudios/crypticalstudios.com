@@ -6,8 +6,8 @@ It is hosted on Netlify.
 
 ## Get started
 
-Just run a local server in this directory.
+`$ npm install`
+`$ npm start`
 
-e.g 
+It uses Netlify dev to run local versions of the functions with auto-reloading. You'll be able to browse the site at http://localhost:8888 and the functions at http://localhost:8888/.netlify/functions/function-name
 
-`$ python -m SimpleHTTPServer 5000`
