@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+  <meta name="theme-color" content="#1a1730">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <title>Cryptical Studios</title>
+
+  <style media="screen" type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre:700|Lato:300');
+
+    :root {
+      --font-family-A: 'Averia Serif Libre', cursive;
+      --font-family-B: 'Lato', sans-serif;
+      --color-text: rgb(240, 240, 240);
+      --color-text-inverse: rgb(50, 50, 50);
+      --color-off-white: #989fae;
+    }
+
+    /* MailChimp Form Embed Code - Horizontal Super Slim - 12/16/2015 v10.7
+      Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
+
+    #mc_embed_signup form {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .mc-field-group {
+      display: inline-block;
+    }
+
+    /* positions input field horizontally */
+    #mc_embed_signup input.email {
+      font-family: var(--font-family-B), Arial, Helvetica, Verdana, sans-serif;
+      font-size: 1rem;
+      border: 1px solid #ABB0B2;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      color: #343434;
+      background-color: #fff;
+      box-sizing: border-box;
+      height: 2rem;
+      padding: 0px 0.4em;
+      display: inline-block;
+      margin: 0;
+      width: 350px;
+      vertical-align: top;
+      margin-bottom: 0;
+    }
+
+    #mc_embed_signup label {
+      display: block;
+      font-size: 1rem;
+      padding-bottom: 0.8rem;
+      font-weight: bold;
+    }
+
+    #mc_embed_signup .clear {
+      display: inline-block;
+    }
+
+    /* positions button horizontally in line with input */
+    #mc_embed_signup .button {
+      font-size: 1rem;
+      border: none;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      letter-spacing: .03em;
+      color: #fff;
+      background-color: #aaa;
+      box-sizing: border-box;
+      height: 2rem;
+      line-height: 2rem;
+      padding: 0 1rem;
+      display: inline-block;
+      margin: 0;
+      transition: all 0.23s ease-in-out 0s;
+    }
+
+    #mc_embed_signup .button:hover {
+      background-color: #777;
+      cursor: pointer;
+    }
+
+    #mc_embed_signup div#mce-responses {
+      float: left;
+      top: -1.4em;
+      padding: 0em .5em 0em .5em;
+      overflow: hidden;
+      width: 90%;
+      margin: 0 5%;
+      clear: both;
+    }
+
+    #mc_embed_signup div.response {
+      margin: 1em 0;
+      padding: 1em .5em .5em 0;
+      font-weight: bold;
+      float: left;
+      top: -1.5em;
+      z-index: 1;
+      width: 80%;
+    }
+
+    #mc_embed_signup #mce-error-response {
+      display: none;
+    }
+
+    #mc_embed_signup #mce-success-response {
+      color: #529214;
+      display: none;
+    }
+
+    #mc_embed_signup label.error {
+      display: block;
+      float: none;
+      width: auto;
+      margin-left: 1.05em;
+      text-align: left;
+      padding: .5em 0;
+    }
+
+    @media (max-width: 768px) {
+      #mc_embed_signup input.email {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+
+      #mc_embed_signup .clear {
+        display: block;
+        width: 100%
+      }
+
+      #mc_embed_signup .button {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    #mc_embed_signup {
+      clear: left;
+      max-width: 500px;
+    }
+
+    #mc_embed_signup .button:hover {
+      background-color: #444;
+      cursor: pointer;
+    }
+
+    #mc_embed_signup input.email,
+    #mc-embedded-subscribe {
+      font-family: var(--font-family-B);
+    }
+
+    p#disclaimer {
+      font-size: 1rem;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+      color: var(--color-off-white);
+    }
+
+
+    /* apply a natural box layout model to all elements, but allowing components to change */
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    html {
+      background: #051937;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-family-B);
+    }
+
+    body {
+      font-size: 16px;
+      line-height: 1.2;
+      color: var(--color-text);
+      padding: 1rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+
+    header {
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      line-height: 1.3;
+      font-family: var(--font-family-B);
+      text-align: center;
+      margin: 0;
+      margin-bottom: 1.5rem;
+      max-width: 25rem;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      margin: 0;
+    }
+
+    h1,
+    h3 {
+      font-family: var(--font-family-A);
+      color: white;
+    }
+
+    h1#logo {
+      margin-bottom: 1.25rem;
+      font-size: 2.5rem;
+      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' fill='white' viewBox='0 0 100 78' enable-background='new 0 0 100 100' xml:space='preserve'><path d='M78.921,28.631H54.245L50,35.983l-4.246-7.353H21.079L8.741,50l12.338,21.37h24.676L50,64.018l4.245,7.353h24.676L91.26,50  L78.921,28.631z M86.929,48.5H67.45l-9.741-16.869h19.479L86.929,48.5z M22.812,31.63h19.48l-9.74,16.87h-19.48L22.812,31.63z   M13.071,51.5h19.48l9.74,16.87h-19.48L13.071,51.5z M44.889,66.869L35.149,50l9.74-16.869l3.379,5.853L41.908,50l6.36,11.017  L44.889,66.869z M50,41.983L54.629,50L50,58.017L45.372,50L50,41.983z M58.094,50l-6.361-11.017l3.379-5.852L64.852,50l-9.74,16.87  l-3.379-5.853L58.094,50z M77.188,68.37H57.709L67.45,51.5h19.479L77.188,68.37z'/></svg>");
+      background-size: 100% 6.5rem;
+      background-repeat: no-repeat;
+      padding-top: 7rem;
+    }
+
+    .subtitle {
+      font-size: 1.6rem;
+      line-height: 1.3;
+      margin-bottom: 1.4rem;
+      font-family: var(--font-family-B);
+    }
+
+    h3 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content-wrapper">
+    <section class="left-col" id="ChainEd overview">
+      <h3 class="subtitle">What's ChainEd</h3>
+      <p>ChainEd is an introductory course to CryptoEconomics that uses crypto incentives to deliver educational activities.</p>
+      <p>For example, a student stakes money which they lose if they don't complete assignments. And tutors stake for the privilege to mark work which they then get paid for, but they lose stake if they fail to mark on time.</p>
+      <p>Read on for the whole story...</p>
+    </section>
+    <section class="right-col" id="projects">
+      <h3 class="subtitle">Learn cryptoeconomics with our course</h3>
+      <p>This course guides you through key topics in cryptoeconomics by actually using some of the blockchain techniques that it explores. So by doing the course and using its materials, you gain a practical understanding of some of the issues at work.</p>
+      <p>So here's an outline of the course in action, with buttons that let you actually take part and run the blockchain functions in question.</p>
+      <p>Warning: None of the smart contracts below have been audited. Proceed at your own risk.</p>
+
+      <h4 class="subtitle">Course signup</h4>
+      <p>To begin, you create a publicly viewable profile stating why you want to take the course and what you hope to achieve. This helps prove identity and maintain qualification standards.</p>
+      <button class="button button--primary">Create a public, student profile&rarr;</button>
+
+      <p>Student has to stake money to ensure you complete course. (You lose stake if you miss deadlines)</p>
+      <p>Others can stake on your behalf e.g. gift.</p>
+
+      <p>To pass modules, you need to submit answers to questions set by the system and also submit a new question that will be added to that system for future students to answer. Those questions are created at launch and also submitted by users. Or you partake in a relevant forum by answering a question posed by another member of the public somewhere.</p>
+
+
+      <p>You answers and questions are marked by a randomly selected group of users.</p>
+
+      <p>You pay to take the course and they are paid from those fees.</p>
+
+      <p>You gain reputation (as an NFT) by answering correctly, and they gain further reputation as teachers/markers. ZK Snarks may be used to secretly share answers etc.</p>
+
+      <p>Teachers/markers sign up (with a stake) to be available to work over a given course period which helps ensure your work will be marked.</p>
+    </section>
+    <footer>
+      <a href="index.html" title="Home page">Home page</a>&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+      <a href="/humans.txt" title="Humans.txt">Attribution</a></h3>
+    </footer>
+  </div>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <!-- Default Statcounter code for Crypticalstudios.com
+    https://www.crypticalstudios.com -->
+  <script type="text/javascript">
+    var sc_project = 11681673;
+    var sc_invisible = 1;
+    var sc_security = "5e8d3a92";
+  </script>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript>
+    <div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img
+          class="statcounter" src="//c.statcounter.com/11681673/0/5e8d3a92/1/" alt="Web
+    Analytics"></a></div>
+  </noscript>
+  <!-- End of Statcounter Code -->
+</body>
+<script src="/js/lambda-example.js"></script>
+</html>

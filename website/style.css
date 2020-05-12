@@ -1,3 +1,8 @@
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
 html {
   background-image:url('img/smartcities-blockchain.jpg');
   background-position: center center;
@@ -23,17 +28,17 @@ div.content-wrapper {
   margin-bottom: 3rem;
 }
 
-#blog li, #blog ul {
+#projects li, #projects ul {
   list-style: none;
   padding: 0;
 }
 
-#blog li {
+#projects li {
   width: 100%;
   float: left;
 }
 
-#blog li a  {
+#projects li a  {
   display: inline;
   color: var(--color-text);
   text-decoration: none;
@@ -48,23 +53,26 @@ a:hover {
   color: white;
 }
 
-#blog li > a {
+#projects li  {
+  margin-bottom: 4rem;
+}
+
+#projects li > a {
   display: block;
   width: 100%;
   float: left;
-  margin-bottom: 4rem;
 }
 
 .bio {
   margin-bottom: 4rem;
 }
 
-#blog li > a:hover button {
+#projects li > a:hover button {
   background: white;
   color: var(--color-text-inverse);
 }
 
-#blog button {
+#projects button {
   background: none;
   cursor: pointer;
   color: white;
