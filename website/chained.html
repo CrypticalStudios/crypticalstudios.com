@@ -199,8 +199,19 @@
       padding: 1rem;
     }
 
-    p {
+    p, div {
       font-size: 1.25rem;
+    }
+
+    .hidden_div, .noteExpanded {
+      padding: 15px;
+      background: #4652a873;
+    }
+    .noteExpansion {
+      display: none;
+    }
+    .notes {
+      color: #edb83c;
     }
 
     header {
@@ -261,23 +272,31 @@
   <div class="content-wrapper">
     <section class="left-col" id="ChainEd overview">
       <h3 class="subtitle">What's ChainEd</h3>
-      <p>ChainEd is an introductory course to CryptoEconomics that uses crypto incentives to deliver educational activities.</p>
-      <p>For example, a student stakes money which they lose if they don't complete assignments. And tutors stake for the privilege to mark work which they then get paid for, but they lose stake if they fail to mark on time.</p>
+      <p>ChainEd is an intermediate course in CryptoEconomics for people who have some knowledge of blockchain. We seek to teach students to critically engage with key ideas in cryptoeconomics in cryptoeconomics.</p>
+      <p>We use crypto incentives to manage educational activities. An example, a student stakes money which they lose if they don't complete assignments. And tutors stake for the privilege to mark work which they then get paid for, but they lose their stake if they fail to mark on time.</p>
       <p>Read on for the whole story...</p>
     </section>
     <section class="right-col" id="projects">
       <h3 class="subtitle">Learn cryptoeconomics with our course</h3>
-      <p>This course guides you through key topics in cryptoeconomics by actually using some of the blockchain techniques that it explores. So by doing the course and using its materials, you gain a practical understanding of some of the issues at work.</p>
-      <p>So here's an outline of the course in action, with buttons that let you actually take part and run the blockchain functions in question.</p>
-      <p>Warning: None of the smart contracts below have been audited. Proceed at your own risk.</p>
+      <p>This course guides you through key topics in cryptoeconomics whilst actually using some of the blockchain techniques that it explores. So by doing the course and using its materials, you gain a practical understanding of the subject matter.</p>
+      <p>Here's an outline of the course in action, with buttons that let you actually take part and run the blockchain functions in question.</p>
+      <p><em>Warning: None of the smart contracts used in this project have been audited yet. Proceed at your own risk.</em></p>
 
       <h4 class="subtitle">Course signup</h4>
       <p>To begin, you create a publicly viewable profile stating why you want to take the course and what you hope to achieve. This helps prove identity and maintain qualification standards.</p>
       <button class="button button--primary">Create a public, student profile&rarr;</button>
 
-      <p>Student has to stake money to ensure you complete course. (You lose stake if you miss deadlines)</p>
-      <p>Others can stake on your behalf e.g. gift.</p>
+      <p>As a student, you have to stake money to ensure you complete course. You lose stake if you miss deadlines.</p>
+      <h3>What does “stake” mean?</h3>
+      <div class="hidden_div">
+        Staking means putting a deposit forward to prove your commitment to something. I can stake 10Eth on a cryptoeconomics course for which I get back 1 Eth for completing each one of 10 modules. Staking 10Eth at the start signals my commitment to completing the course, as I will only get back my 10 Eth if I complete the course.
+      </div>
+      <button class="show-button" onclick="click_show_hidden_div()">+ Show what it means</button>
+      <hr>
 
+      <p>People can stake on each other's behalf, for example to give you the course as a gift.</p>
+      <button class="button button--primary">Give this course as a gift&rarr;</button>
+      
       <p>To pass modules, you need to submit answers to questions set by the system and also submit a new question that will be added to that system for future students to answer. Those questions are created at launch and also submitted by users. Or you partake in a relevant forum by answering a question posed by another member of the public somewhere.</p>
 
 
@@ -285,7 +304,10 @@
 
       <p>You pay to take the course and they are paid from those fees.</p>
 
-      <p>You gain reputation (as an NFT) by answering correctly, and they gain further reputation as teachers/markers. ZK Snarks may be used to secretly share answers etc.</p>
+      <p>You gain reputation (<span id="note1" class="notes unexpanded" onclick="return expand(this)">as an NFT)<sup><small>↘</small></sup><span class="noteExpansion" id="note1Expansion">NFT refers to a Non-Fungible Token. Typically, this kind of token cannot be divided into smaller pieces. They can also be programmed not to be exchanged at all and so act as a marker of some kind e.g. a qualification.</span></span>
+
+
+       by answering correctly, and they gain further reputation as teachers/markers. ZK Snarks may be used to secretly share answers etc.</p>
 
       <p>Teachers/markers sign up (with a stake) to be available to work over a given course period which helps ensure your work will be marked.</p>
     </section>
@@ -297,6 +319,32 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   <!-- Default Statcounter code for Crypticalstudios.com
     https://www.crypticalstudios.com -->
+  <script type="text/javascript">
+    document.querySelector('.hidden_div').style.display = 'none';
+    function click_show_hidden_div() {
+        if(document.querySelector('.hidden_div').style.display == 'none') {
+            document.querySelector('.hidden_div').style.display = "block";
+            document.querySelector('.show-button').innerHTML = "Hide";
+        } else {
+            document.querySelector('.hidden_div').style.display = "none";
+            document.querySelector('.show-button').innerHTML = "<span class='faq-plus-sign'>+</span> Show";
+        };
+    };
+  function expand(e){
+      filling_id_name = e.getAttribute("id") + 'Expansion'
+      let original = e.innerHTML;
+      let filling = document.getElementById(filling_id_name);
+      console.log(filling);
+      if (e.classList[1] == 'unexpanded'){
+          filling.style.display = 'inline';
+          e.classList.remove('unexpanded');
+      } else {
+          filling.style.display = 'none';
+          e.classList.add('unexpanded');
+      };
+      return false;
+  }
+  </script>
   <script type="text/javascript">
     var sc_project = 11681673;
     var sc_invisible = 1;
