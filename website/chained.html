@@ -205,7 +205,11 @@
 
     .hidden_div, .noteExpanded {
       padding: 15px;
-      background: #4652a873;
+      display: none;
+      /*background: #4652a873;*/
+    }
+    .hidden_div_title {
+      cursor: pointer;
     }
     .noteExpansion {
       display: none;
@@ -278,45 +282,48 @@
       <p>Read on for the whole story...</p>
     </section>
     <section class="right-col" id="projects">
-      <h3 class="subtitle">Learn cryptoeconomics with our course</h3>
+      <h3>Learn cryptoeconomics with our course</h3>
       <p>This course guides you through key topics in cryptoeconomics whilst actually using some of the blockchain techniques that it explores. So by doing the course and using its materials, you gain a practical understanding of the subject matter.</p>
       <p>Here's an outline of the course in action, with buttons that let you actually take part and run the blockchain functions in question.</p>
       <p><em>Warning: None of the smart contracts used in this project have been audited yet. Proceed at your own risk.</em></p>
 
 
-      <h3>How does the course work?</h3>
+      <h3 id="hidden_overview" class="hidden_div_title" onclick="click_show_hidden_div(this)">How does the course work?</h3>
 
-      <p>To begin, you create a publicly viewable profile stating why you want to take the course and what you hope to achieve. This helps prove identity and maintain qualification standards.</p>
-      <button class="button button--primary">Create a public, student profile&rarr;</button>
+      <div id="hidden_overview_div" class="hidden_div">
+        <p>To begin, you create a publicly viewable profile stating why you want to take the course and what you hope to achieve. This helps prove identity and maintain qualification standards.</p>
+        <button class="button button--primary">Create a public, student profile&rarr;</button>
 
-      <p>As a student, you have to stake money to ensure you complete course. You lose stake if you miss deadlines.</p>
-      <h3>What does “stake” mean?</h3>
-      <div class="hidden_div">
-        Staking means putting a deposit forward to prove your commitment to something. I can stake 10Eth on a cryptoeconomics course for which I get back 1 Eth for completing each one of 10 modules. Staking 10Eth at the start signals my commitment to completing the course, as I will only get back my 10 Eth if I complete the course.
+        <p>As a student, you have to stake money to ensure you complete course. You lose stake if you miss deadlines.</p>
+        <h3>What does “stake” mean?</h3>
+        <div class="hidden_div">
+          Staking means putting a deposit forward to prove your commitment to something. I can stake 10Eth on a cryptoeconomics course for which I get back 1 Eth for completing each one of 10 modules. Staking 10Eth at the start signals my commitment to completing the course, as I will only get back my 10 Eth if I complete the course.
+        </div>
+        <button class="show-button" onclick="click_show_hidden_div()">+ Show what it means</button>
+
+        <p>People can stake on each other’s behalf, for example to give you the course as a gift.</p>
+        <button class="button button--secondary">Give this course as a gift&rarr;</button>
+        
+        <p>To pass modules you need to submit answers to questions set by the system. You must also submit a new question based on the material that may be added to that system for future students to answer.
+        
+        <p>Your answers and course work are marked by a randomly selected group of tutors. Tutors are paid from the fees you pay to take the course.</p>
+
+        <p>Tutors sign up with a stake to commit to be available to work over the course period. This helps ensure your work will be marked.</p>
+
+        <button class="button button--primary">Sign up as a tutor&rarr;</button>
+
+        <p>Tutors can earn reputation <span id="note1" class="notes unexpanded" onclick="return expand(this)">as an NFT<sup><small>↘</small></sup>  <span class="noteExpansion" id="note1Expansion"> – NFT refers to a Non-Fungible Token. Typically, this kind of token cannot be divided into smaller pieces. They can also be programmed not to be exchanged at all and so act as a marker of some kind e.g. a qualification.</span></span></p>
+    </div>
+
+
+      <h3 id="hidden_module1" class="hidden_div_title" onclick="click_show_hidden_div(this)">Module 1 - The Blockchain paradigm</h3>
+
+      <div id="hidden_module1_div" class="hidden_div">
+        <p>Keywords: Web 2.0 versus 3.0. Ideology, value, currency, reputation, governance.</p>
+
+        <p>“Blockchain technology… As a movement, [has] been rife with seemingly disparate narratives: people adopting its cocktail of hashes & cryptography as a Rorschach test for their beliefs. It’s simultaneously the most anarchist, most libertarian, most egalitarian, most socialist, most freeing, most authoritarian technology.”</p>
+        <p><a href="https://blog.simondlr.com/posts/new-markets-in-the-arts-property-rights">New Markets In The Arts #1: Property Rights</a></p>
       </div>
-      <button class="show-button" onclick="click_show_hidden_div()">+ Show what it means</button>
-
-      <p>People can stake on each other’s behalf, for example to give you the course as a gift.</p>
-      <button class="button button--secondary">Give this course as a gift&rarr;</button>
-      
-      <p>To pass modules you need to submit answers to questions set by the system. You must also submit a new question based on the material that may be added to that system for future students to answer.
-      
-      <p>Your answers and course work are marked by a randomly selected group of tutors. Tutors are paid from the fees you pay to take the course.</p>
-
-      <p>Tutors sign up with a stake to commit to be available to work over the course period. This helps ensure your work will be marked.</p>
-
-      <button class="button button--primary">Sign up as a tutor&rarr;</button>
-
-      <p>Tutr reputation is earned <span id="note1" class="notes unexpanded" onclick="return expand(this)">(as an NFT)<sup><small>↘</small></sup>  <span class="noteExpansion" id="note1Expansion"> – NFT refers to a Non-Fungible Token. Typically, this kind of token cannot be divided into smaller pieces. They can also be programmed not to be exchanged at all and so act as a marker of some kind e.g. a qualification.</span></span></p>
-
-
-      <h3>Module 1 - The Blockchain paradigm</h3>
-
-      <p>Keywords: Web 2.0 versus 3.0. Ideology, value, currency, reputation, governance.</p>
-
-      <p>“Blockchain technology… As a movement, [has] been rife with seemingly disparate narratives: people adopting its cocktail of hashes & cryptography as a Rorschach test for their beliefs. It’s simultaneously the most anarchist, most libertarian, most egalitarian, most socialist, most freeing, most authoritarian technology.”</p>
-      <p><a href="https://blog.simondlr.com/posts/new-markets-in-the-arts-property-rights">New Markets In The Arts #1: Property Rights</a></p>
-
 
     </section>
     <footer>
@@ -329,13 +336,14 @@
     https://www.crypticalstudios.com -->
   <script type="text/javascript">
     document.querySelector('.hidden_div').style.display = 'none';
-    function click_show_hidden_div() {
-        if(document.querySelector('.hidden_div').style.display == 'none') {
-            document.querySelector('.hidden_div').style.display = "block";
-            document.querySelector('.show-button').innerHTML = "Hide";
+    function click_show_hidden_div(e) {
+        var this_hidden_div = '#' + e.getAttribute('id') + '_div';
+        if(document.querySelector(this_hidden_div).style.display == 'none') {
+            document.querySelector(this_hidden_div).style.display = 'block';
+            // document.querySelector('.show-button').innerHTML = "Hide";
         } else {
-            document.querySelector('.hidden_div').style.display = "none";
-            document.querySelector('.show-button').innerHTML = "<span class='faq-plus-sign'>+</span> Show";
+            document.querySelector(this_hidden_div).style.display = 'none';
+            // document.querySelector('.show-button').innerHTML = "<span class='faq-plus-sign'>+</span> Show";
         };
     };
   function expand(e){
