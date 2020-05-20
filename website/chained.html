@@ -204,7 +204,7 @@
     }
 
     .hidden_div, .noteExpanded {
-      padding: 15px;
+      padding: 0 15px 15px;
       display: none;
       /*background: #4652a873;*/
     }
@@ -294,11 +294,7 @@
         <button class="button button--primary">Create a public, student profile&rarr;</button>
 
         <p>As a student, you have to stake money to ensure you complete course. You lose stake if you miss deadlines.</p>
-        <h3>What does “stake” mean?</h3>
-        <div class="hidden_div">
-          Staking means putting a deposit forward to prove your commitment to something. I can stake 10Eth on a cryptoeconomics course for which I get back 1 Eth for completing each one of 10 modules. Staking 10Eth at the start signals my commitment to completing the course, as I will only get back my 10 Eth if I complete the course.
-        </div>
-        <button class="show-button" onclick="click_show_hidden_div()">+ Show what it means</button>
+        <span id="note1" class="notes unexpanded" onclick="return expand(this)"><strong>What does “stake” mean?</strong> <sup><small>↘</small></sup>  <span class="noteExpansion" id="note1Expansion"> Staking means putting a deposit forward to prove your commitment to something. I can stake 10Eth on a cryptoeconomics course for which I get back 1 Eth for completing each one of 10 modules. Staking 10Eth at the start signals my commitment to completing the course, as I will only get back my 10 Eth if I complete the course.span></span></span></p>
 
         <p>People can stake on each other’s behalf, for example to give you the course as a gift.</p>
         <button class="button button--secondary">Give this course as a gift&rarr;</button>
