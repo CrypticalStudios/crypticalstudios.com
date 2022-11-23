@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+  <meta name="theme-color" content="#1a1730">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <title>Cryptical Studios</title>
+
+  <style media="screen" type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre:700|Lato:300');
+
+    :root {
+      --font-family-A: 'Averia Serif Libre', cursive;
+      --font-family-B: 'Lato', sans-serif;
+      --color-text: rgb(240, 240, 240);
+      --color-text-inverse: rgb(50, 50, 50);
+      --color-off-white: #989fae;
+    }
+
+    /* MailChimp Form Embed Code - Horizontal Super Slim - 12/16/2015 v10.7
+      Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
+
+    #mc_embed_signup form {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .mc-field-group {
+      display: inline-block;
+    }
+
+    /* positions input field horizontally */
+    #mc_embed_signup input.email {
+      font-family: var(--font-family-B), Arial, Helvetica, Verdana, sans-serif;
+      font-size: 1rem;
+      border: 1px solid #ABB0B2;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      color: #343434;
+      background-color: #fff;
+      box-sizing: border-box;
+      height: 2rem;
+      padding: 0px 0.4em;
+      display: inline-block;
+      margin: 0;
+      width: 350px;
+      vertical-align: top;
+      margin-bottom: 0;
+    }
+
+    #mc_embed_signup label {
+      display: block;
+      font-size: 1rem;
+      padding-bottom: 0.8rem;
+      font-weight: bold;
+    }
+
+    #mc_embed_signup .clear {
+      display: inline-block;
+    }
+
+    /* positions button horizontally in line with input */
+    #mc_embed_signup .button {
+      font-size: 1rem;
+      border: none;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      letter-spacing: .03em;
+      color: #fff;
+      background-color: #aaa;
+      box-sizing: border-box;
+      height: 2rem;
+      line-height: 2rem;
+      padding: 0 1rem;
+      display: inline-block;
+      margin: 0;
+      transition: all 0.23s ease-in-out 0s;
+    }
+
+    #mc_embed_signup .button:hover {
+      background-color: #777;
+      cursor: pointer;
+    }
+
+    #mc_embed_signup div#mce-responses {
+      float: left;
+      top: -1.4em;
+      padding: 0em .5em 0em .5em;
+      overflow: hidden;
+      width: 90%;
+      margin: 0 5%;
+      clear: both;
+    }
+
+    #mc_embed_signup div.response {
+      margin: 1em 0;
+      padding: 1em .5em .5em 0;
+      font-weight: bold;
+      float: left;
+      top: -1.5em;
+      z-index: 1;
+      width: 80%;
+    }
+
+    #mc_embed_signup #mce-error-response {
+      display: none;
+    }
+
+    #mc_embed_signup #mce-success-response {
+      color: #529214;
+      display: none;
+    }
+
+    #mc_embed_signup label.error {
+      display: block;
+      float: none;
+      width: auto;
+      margin-left: 1.05em;
+      text-align: left;
+      padding: .5em 0;
+    }
+
+    @media (max-width: 768px) {
+      #mc_embed_signup input.email {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+
+      #mc_embed_signup .clear {
+        display: block;
+        width: 100%
+      }
+
+      #mc_embed_signup .button {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    #mc_embed_signup {
+      clear: left;
+      max-width: 500px;
+    }
+
+    #mc_embed_signup .button:hover {
+      background-color: #444;
+      cursor: pointer;
+    }
+
+    #mc_embed_signup input.email,
+    #mc-embedded-subscribe {
+      font-family: var(--font-family-B);
+    }
+
+    p#disclaimer {
+      font-size: 1rem;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+      color: var(--color-off-white);
+    }
+
+
+    /* apply a natural box layout model to all elements, but allowing components to change */
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    html {
+      background: #051937;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-family-B);
+    }
+
+    body {
+      font-size: 16px;
+      line-height: 1.2;
+      color: var(--color-text);
+      padding: 1rem;
+    }
+
+    p, div {
+      font-size: 1.25rem;
+    }
+
+    .hidden_div, .noteExpanded {
+      padding: 0 15px 15px;
+      display: none;
+      /*background: #4652a873;*/
+    }
+    .hidden_div_title {
+      cursor: pointer;
+    }
+    .noteExpansion {
+      display: none;
+    }
+    .notes {
+      color: #edb83c;
+      cursor: pointer;
+    }
+
+    header {
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      line-height: 1.3;
+      font-family: var(--font-family-B);
+      text-align: center;
+      margin: 0;
+      margin-bottom: 1.5rem;
+      max-width: 25rem;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      margin: 0;
+    }
+
+    h1,
+    h3 {
+      font-family: var(--font-family-A);
+      color: white;
+    }
+
+    h1#logo {
+      margin-bottom: 1.25rem;
+      font-size: 2.5rem;
+      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' fill='white' viewBox='0 0 100 78' enable-background='new 0 0 100 100' xml:space='preserve'><path d='M78.921,28.631H54.245L50,35.983l-4.246-7.353H21.079L8.741,50l12.338,21.37h24.676L50,64.018l4.245,7.353h24.676L91.26,50  L78.921,28.631z M86.929,48.5H67.45l-9.741-16.869h19.479L86.929,48.5z M22.812,31.63h19.48l-9.74,16.87h-19.48L22.812,31.63z   M13.071,51.5h19.48l9.74,16.87h-19.48L13.071,51.5z M44.889,66.869L35.149,50l9.74-16.869l3.379,5.853L41.908,50l6.36,11.017  L44.889,66.869z M50,41.983L54.629,50L50,58.017L45.372,50L50,41.983z M58.094,50l-6.361-11.017l3.379-5.852L64.852,50l-9.74,16.87  l-3.379-5.853L58.094,50z M77.188,68.37H57.709L67.45,51.5h19.479L77.188,68.37z'/></svg>");
+      background-size: 100% 6.5rem;
+      background-repeat: no-repeat;
+      padding-top: 7rem;
+    }
+
+    .subtitle {
+      font-size: 1.6rem;
+      line-height: 1.3;
+      margin-bottom: 1.4rem;
+      font-family: var(--font-family-B);
+    }
+
+    h3 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content-wrapper">
+    <section class="left-col" id="ChainEd overview">
+      <h3 class="subtitle">How to DAO: Trialling DAOs for effective organisation</h3>
+    </section>
+    <section class="right-col" id="projects">
+      <h3>How to try a DAO in your org and why you may want to.</h3>
+      <p>
+        Here’s a guide to setting up the tools to use a DAO. Click on the titles below to show the content.
+      </p>
+      <p>
+        This guide will be updated soon.
+      </p>
+
+      <h3 id="hidden_overview" class="hidden_div_title" onclick="click_show_hidden_div(this)">Get an Ethereum wallet &raquo;</h3>
+
+      <div id="hidden_overview_div" class="hidden_div">
+        <ul>
+          <li>Use Metamask wallet:<a href="metamask.io/">metamask.io</a></li>
+          <li>Create account</li>
+          <li>Backup private key</li>
+        </ul>
+      </div>
+
+      <h3 id="hidden_create" class="hidden_div_title" onclick="click_show_hidden_div(this)">Create a DAO &raquo;</h3>
+
+      <div id="hidden_create_div" class="hidden_div">
+
+      <h3>Choose a DAO platform</h3>
+
+      <p>There are various options, even amongst Ethereum-based systems.</p>
+
+        <ul>
+          <li>DAOHaus</li>
+          <li>Colony</li>
+          <li>Backup private key</li>
+        </ul>
+
+      <p>We’ll use DAOHaus for our trial. An overview here: <a href="https://www.dodao.io/dao-frameworks/daohaus">https://www.dodao.io/dao-frameworks/daohaus</a></p>
+
+
+<p>If you want to create the DAO using a testnet (not real money), use the Ethereum testnet named Goerli.</p>
+
+<p>Get some free Goerli Eth from a faucet: https://goerlifaucet.com (these give Eth to facilitate development)</p>
+
+<p>Switch Metamask to Goerli network</p>
+
+If you want to create a DAO on the Ethereum mainnet with real money:
+
+With DAOHaus - on Gnosis (xDai) chain (which is cheaper).
+
+Connect to Gnosis chain network with Metamask wallet: https://daohaus.club/docs/users/networks/
+
+Get some DAI on main net
+
+Convert that to xDai
+
+Then create the DAO using the summon command
+
+https://app.daohaus.club/summon
+
+<p>The settings you use cannot be changed after you’ve created the DAO, so make sure you thik them through. Key settings include voting periods, grace period and proposal costs. You may want to set these low if you’re just trialing the DAO. e.g. a short voting period will let you set up and finalise a vote in under an hour when you’re learning but you’ll obviously want longer if you’re setting up a real DAO where people may need days or longer to cast their vote.</p>
+
+Similarly, proposal costs should be cheap for testing but the real thing so people only make proposals when they really need to. e.g. 1000000000000000 wei is a good low price
+
+Here’s a playground DAO I made earlier, <a href="https://app.daohaus.club/dao/0x5/0x3dbe03fe8a713e9e703fe4005bc747f6abb97d08">the ab__ playground</a>.
+
+You’ll need to get some wrapped Eth (WETH) to vote in the dapp, so use Uniswap to convert some Eth to Weth: https://app.uniswap.org/#/swap
+
+You will then need to add Weth with “Import tokens” at the bottom here:
+
+Token contract address (for Weth on Goerli testnet): 0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6
+
+with Token symbol: Weth  and Token decimal: 18.
+      </div>
+
+
+      <h3 id="hidden_members" class="hidden_div_title" onclick="click_show_hidden_div(this)">Add DAO members &raquo;</h3>
+
+      <div id="hidden_members_div" class="hidden_div">
+
+
+Either apply to join yourself or apply on someone’s behalf by making a membership proposal.
+
+If you are running this in a workshop, assign existing members to set up and manage votes for new members. Make sure you don’t miss the deadlines, you may only have a few minutes to act during each phase!
+
+https://app.daohaus.club/dao/0x5/0x005d6e1e2e8052d7634d60a8ca759114ed4c1bfd/members
+
+Click “New Proposal +”, create the proposal, then vote on it, allow the grace period to pass, then process it to enact it.
+
+Members who want to add their personal info like name need to use a service called Ceramic, which will 
+
+Let members vote to spend DAO’s money
+</div>
+
+      <h3 id="hidden_funding" class="hidden_div_title" onclick="click_show_hidden_div(this)">Make a funding proposal &raquo;</h3>
+
+      <div id="hidden_funding_div" class="hidden_div">
+
+<p>Here‘s a <a href="https://app.daohaus.club/dao/0x5/0x3dbe03fe8a713e9e703fe4005bc747f6abb97d08/proposals">dummy proposal</a>.
+
+
+</div>
+
+
+<!--       <h3 id="hidden_course_guide" class="hidden_div_title" onclick="click_show_hidden_div(this)">How does the course work?</h3>
+
+      <div id="hidden_course_guide_div" class="hidden_div">
+        <p>To begin, you create a publicly viewable profile stating why you want to take the course and what you hope to achieve. This helps prove identity and maintain qualification standards.</p>
+        <button class="button button--primary">Create a public student profile&rarr;</button>
+
+        <p>As a student, you have to stake money to ensure you complete course. You lose stake if you miss deadlines.</p>
+        <span id="note1" class="notes unexpanded" onclick="return expand(this)"><strong>What does “stake” mean?</strong> <sup><small>↘</small></sup>  <span class="noteExpansion" id="note1Expansion"> Staking means putting a deposit forward to prove your commitment to something. I can stake 10Eth on a cryptoeconomics course for which I get back 1 Eth for completing each one of 10 modules. Staking 10Eth at the start signals my commitment to completing the course, as I will only get back my 10 Eth if I complete the course.span></span></span></p>
+
+        <p>People can stake on each other’s behalf. For example, I could stake the cost of the course to give you the course as a gift.</p>
+        <button class="button button--secondary">Give this course as a gift&rarr;</button>
+        
+        <p>To pass modules you need to submit answers to questions set by the system. You must also submit a new question based on the course material. Your question may be added to the course for future students to answer.
+        
+        <p>Your answers and course work are marked by a randomly selected group of tutors. Tutors are paid from the fees you pay to take the course.</p>
+
+        <p>Tutors sign up with a stake to commit to be available to work over the course period. This helps ensure your work will be marked.</p>
+
+        <button class="button button--primary">Sign up as a tutor&rarr;</button>
+
+        <p>Tutors can earn reputation <span id="note1" class="notes unexpanded" onclick="return expand(this)">as an NFT<sup><small>↘</small></sup>  <span class="noteExpansion" id="note1Expansion"> – NFT refers to a Non-Fungible Token. Typically, this kind of token cannot be divided into smaller pieces. They can also be programmed not to be exchanged at all and so act as a marker of some kind e.g. a qualification.</span></span></p>
+    </div>
+
+
+      <h3 id="hidden_module1" class="hidden_div_title" onclick="click_show_hidden_div(this)">Module 1 - Blockchain paradigms</h3>
+
+      <div id="hidden_module1_div" class="hidden_div">
+        <p>Keywords: Web 2.0 versus 3.0. Decentralization, ideology, value, currency, reputation, governance.</p>
+
+        <p><strong>Reading 1:</strong> <a href="https://blog.simondlr.com/posts/new-markets-in-the-arts-property-rights">New Markets In The Arts #1: Property Rights</a></p>
+        <p>“Blockchain technology… As a movement, [has] been rife with seemingly disparate narratives: people adopting its cocktail of hashes & cryptography as a Rorschach test for their beliefs. It’s simultaneously the most anarchist, most libertarian, most egalitarian, most socialist, most freeing, most authoritarian technology.” – by <a href="http://simondlr.com">Simon De La Rouviere</a></p>
+        <p><strong>Reading 2:</strong> <a href="https://www.freecodecamp.org/news/why-progressive-decentralization-is-blockchains-best-hope-31a497f2673b/">Why Progressive Decentralization is blockchain’s best hope</a></p>
+        <p>“Immutability is blockchain’s greatest strength and biggest barrier. Progressive decentralization could be the answer.” – by Arthur Camara</p>
+
+      </div>
+
+      <h3 id="hidden_module2" class="hidden_div_title" onclick="click_show_hidden_div(this)">Module 2 - Cryptoeconomic theory</h3>
+
+      <div id="hidden_module2_div" class="hidden_div">
+        <p>Keywords: Incentives, stake, stablecoins.</p>
+
+        <p><strong>Reading 1:</strong> <a href="https://filecoin.io/blog/filecoin-cryptoeconomic-constructions/">Filecoin's Cryptoeconomic Constructions</a></p>
+        <p>“Public blockchains rely on a combination of cryptography and incentive structures that make a system work without centralized control. Cryptography makes some harmful actions practically impossible, while game theory discourages others. Analysis that focuses on this set of mechanisms is called cryptoeconomics. A properly-structured cryptoeconomic system can determine whether a network becomes valuable and self-sustaining or struggles to get off the ground.”</p>
+        <p><strong>Reading 2:</strong> <a href="https://a16z.com/2020/04/08/crypto-network-effects/">Crypto’s Business Model is Familiar. What Isn’t is Who Benefits</a></p>
+        <p>"valuable crypto services now have the unique opportunity to redistribute that value directly to the users who generate it. 
+        This is the same basic principle of defensibility in traditional Web 2.0 platforms: attract users, build network effects, and increase defensibility through switching costs." – by <a href="https://a16z.com/author/jesse-walden/#1">Jesse Walden</a></p> -->
+
+      </div>
+
+    </section>
+    <footer>
+      <a href="index.html" title="Home page">Home page</a>&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+      <a href="/humans.txt" title="Humans.txt">Attribution</a></h3>
+    </footer>
+  </div>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <!-- Default Statcounter code for Crypticalstudios.com
+    https://www.crypticalstudios.com -->
+  <script type="text/javascript">
+    document.querySelector('.hidden_div').style.display = 'none';
+    function click_show_hidden_div(e) {
+        var this_hidden_div = '#' + e.getAttribute('id') + '_div';
+        if(document.querySelector(this_hidden_div).style.display == 'none') {
+            document.querySelector(this_hidden_div).style.display = 'block';
+            // document.querySelector('.show-button').innerHTML = "Hide";
+        } else {
+            document.querySelector(this_hidden_div).style.display = 'none';
+            // document.querySelector('.show-button').innerHTML = "<span class='faq-plus-sign'>+</span> Show";
+        };
+    };
+  function expand(e){
+      filling_id_name = e.getAttribute("id") + 'Expansion'
+      let original = e.innerHTML;
+      let filling = document.getElementById(filling_id_name);
+      console.log(filling);
+      if (e.classList[1] == 'unexpanded'){
+          filling.style.display = 'inline';
+          e.classList.remove('unexpanded');
+      } else {
+          filling.style.display = 'none';
+          e.classList.add('unexpanded');
+      };
+      return false;
+  }
+  </script>
+  <script type="text/javascript">
+    var sc_project = 11681673;
+    var sc_invisible = 1;
+    var sc_security = "5e8d3a92";
+  </script>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript>
+    <div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img
+          class="statcounter" src="//c.statcounter.com/11681673/0/5e8d3a92/1/" alt="Web
+    Analytics"></a></div>
+  </noscript>
+  <!-- End of Statcounter Code -->
+</body>
+<script src="/js/lambda-example.js"></script>
+</html>
