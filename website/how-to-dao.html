@@ -280,20 +280,20 @@
     </section>
     <section class="right-col" id="projects">
       <h3>How to try a DAO in your org and why you may want to.</h3>
+      <p>DAOs can help organisations manage core functions such as voting on funding and processing payments. </p>
       <p>
         Here’s a guide to setting up the tools to use a DAO. Click on the titles below to show the content.
       </p>
-      <p>
-        This guide will be updated soon.
-      </p>
+      <p>This guide will be updated over time.</p>
 
       <h3 id="hidden_overview" class="hidden_div_title" onclick="click_show_hidden_div(this)">Get an Ethereum wallet &raquo;</h3>
 
-      <div id="hidden_overview_div" class="hidden_div">
+      <div id="hidden_overview_div">
         <ul>
-          <li>Use Metamask wallet:<a href="metamask.io/">metamask.io</a></li>
-          <li>Create account</li>
-          <li>Backup private key</li>
+          <li>– Download the Metamask wallet, which is a browser extension for Firefox or Chrome: <a href="metamask.io/">metamask.io</a></li>
+          <li>– Follow the setup instructions in the extension.</li>
+          <li>– Backup your private key. We'll only use this wallet for testing for now but you may use it in future to manage tokens, voting rights, or other valuable activity.</li>
+          <img src="img/metamask-keys.png">
         </ul>
       </div>
 
@@ -301,52 +301,45 @@
 
       <div id="hidden_create_div" class="hidden_div">
 
-      <h3>Choose a DAO platform</h3>
+      <h4>Choose a DAO platform</h4>
 
-      <p>There are various options, even amongst Ethereum-based systems.</p>
+      <p>There are various options, even amongst Ethereum-based systems, such as <a href="https://daohaus.club/">DAOHaus</a> and <a href="https://colony.io/">Colony</a>.
 
-        <ul>
-          <li>DAOHaus</li>
-          <li>Colony</li>
-          <li>Backup private key</li>
-        </ul>
-
-      <p>We’ll use DAOHaus for our trial. An overview here: <a href="https://www.dodao.io/dao-frameworks/daohaus">https://www.dodao.io/dao-frameworks/daohaus</a></p>
+      <p>We’ll use DAOHaus for our trial. Here's <a href="https://www.dodao.io/dao-frameworks/daohaus">an overview of the platform.</a></p>
 
 
-<p>If you want to create the DAO using a testnet (not real money), use the Ethereum testnet named Goerli.</p>
+<p>– If you want to create the DAO using a testnet (not real money), use the Ethereum testnet named Goerli.</p>
 
-<p>Get some free Goerli Eth from a faucet: https://goerlifaucet.com (these give Eth to facilitate development)</p>
+<p>– <a href="https://goerlifaucet.com">Get some free Goerli Eth from a faucet</a>. Faucets give Eth to let people test things out, like we're doing here.</p>
 
 <p>Switch Metamask to Goerli network</p>
 
-If you want to create a DAO on the Ethereum mainnet with real money:
+<!-- If you want to create a DAO on the Ethereum mainnet with real money:
 
 With DAOHaus - on Gnosis (xDai) chain (which is cheaper).
 
-Connect to Gnosis chain network with Metamask wallet: https://daohaus.club/docs/users/networks/
+– <a href="https://daohaus.club/docs/users/networks/">Connect to Gnosis chain network</a> with Metamask wallet.
 
-Get some DAI on main net
+– Get some DAI on main net
 
-Convert that to xDai
+– Convert that to xDai -->
 
-Then create the DAO using the summon command
+– Then <a href="https://app.daohaus.club/summon">create the DAO using the summon command</a>.
 
-https://app.daohaus.club/summon
 
 <p>The settings you use cannot be changed after you’ve created the DAO, so make sure you thik them through. Key settings include voting periods, grace period and proposal costs. You may want to set these low if you’re just trialing the DAO. e.g. a short voting period will let you set up and finalise a vote in under an hour when you’re learning but you’ll obviously want longer if you’re setting up a real DAO where people may need days or longer to cast their vote.</p>
 
-Similarly, proposal costs should be cheap for testing but the real thing so people only make proposals when they really need to. e.g. 1000000000000000 wei is a good low price
+<p>Similarly, proposal costs should be cheap for testing but the real thing so people only make proposals when they really need to. e.g. 1000000000000000 wei is a good low price</p>
 
-Here’s a playground DAO I made earlier, <a href="https://app.daohaus.club/dao/0x5/0x3dbe03fe8a713e9e703fe4005bc747f6abb97d08">the ab__ playground</a>.
+<p>Here’s a playground DAO I made earlier, <a href="https://app.daohaus.club/dao/0x5/0x3dbe03fe8a713e9e703fe4005bc747f6abb97d08">the ab__ playground</a>.</p>
 
-You’ll need to get some wrapped Eth (WETH) to vote in the dapp, so use Uniswap to convert some Eth to Weth: https://app.uniswap.org/#/swap
+<p>– You’ll need to get some wrapped Eth (WETH) to vote in the dapp, so <a href="https://app.uniswap.org/#/swap">use Uniswap to convert some Eth to Weth</a>.</p>
 
-You will then need to add Weth with “Import tokens” at the bottom here:
+<p>– You will then need to add Weth in Metamask with “Import tokens” at the bottom here:</p>
 
-Token contract address (for Weth on Goerli testnet): 0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6
+<p>Token contract address (for Weth on Goerli testnet): 0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6</p>
 
-with Token symbol: Weth  and Token decimal: 18.
+<p>with Token symbol: Weth  and Token decimal: 18.</p>
       </div>
 
 
@@ -354,26 +347,31 @@ with Token symbol: Weth  and Token decimal: 18.
 
       <div id="hidden_members_div" class="hidden_div">
 
+<p><a href="https://app.daohaus.club/dao/0x5/0x005d6e1e2e8052d7634d60a8ca759114ed4c1bfd/members">Here’s a test members page.</a></p>
 
-Either apply to join yourself or apply on someone’s behalf by making a membership proposal.
+<p>Either apply to join yourself or apply on someone’s behalf by making a membership proposal.</p>
 
-If you are running this in a workshop, assign existing members to set up and manage votes for new members. Make sure you don’t miss the deadlines, you may only have a few minutes to act during each phase!
+<p>If you are running this in a workshop, assign existing members to set up and manage votes for new members. Make sure you don’t miss the deadlines, you may only have a few minutes to act during each phase!</p>
 
-https://app.daohaus.club/dao/0x5/0x005d6e1e2e8052d7634d60a8ca759114ed4c1bfd/members
+<p>– Click “New Proposal +”, create the proposal, then vote on it, allow the grace period to pass, then process it to enact it.</p>
 
-Click “New Proposal +”, create the proposal, then vote on it, allow the grace period to pass, then process it to enact it.
+<p>Members who want to add their personal info, like their name, need to use a service called Ceramic but you can only do this on the main Ethereum network not on the testnet that we use for testing.</p>
 
-Members who want to add their personal info like name need to use a service called Ceramic, which will 
-
-Let members vote to spend DAO’s money
 </div>
 
       <h3 id="hidden_funding" class="hidden_div_title" onclick="click_show_hidden_div(this)">Make a funding proposal &raquo;</h3>
 
       <div id="hidden_funding_div" class="hidden_div">
 
-<p>Here‘s a <a href="https://app.daohaus.club/dao/0x5/0x3dbe03fe8a713e9e703fe4005bc747f6abb97d08/proposals">dummy proposal</a>.
+<p>A funding proposal lets members vote to spend DAO’s money</p>
 
+<p>Here‘s a <a href="https://app.daohaus.club/dao/0x5/0x3dbe03fe8a713e9e703fe4005bc747f6abb97d08/proposals">dummy proposal</a>.</p>
+
+<p>To create a new one, select "New Proposal +", then search for "Funding Proposal" (you might need to select "The Classics" in the dropdown).</p>
+
+<p>Add the name of the proposal e.g. "Pay Alex for their time", add the Recipient’s Ethereum address in "Recipient", and add the amount of Eth (in Weth) in the "Payment requested" area. The other fields are not necessary for now.</p>
+
+<p>Submit the proposal request and sign the transaction. Then wait for the voting period to begin, make sure members vote, wait for the grace period to pass, then process the result if necessary e.g. pay the person.</p>
 
 </div>
 

@@ -38,11 +38,13 @@ div.content-wrapper {
   float: left;
 }
 
+
 #projects li a  {
   display: inline;
   color: var(--color-text);
   text-decoration: none;
 }
+
 
 a {
   color: var(--color-text);
@@ -61,6 +63,16 @@ a:hover {
   display: block;
   width: 100%;
   float: left;
+}
+
+#hidden_overview_div li a {
+  text-decoration: underline;
+  float: none;
+  display: inline;
+}
+
+#hidden_overview_div li {
+  margin: 1em 0;
 }
 
 .bio {
