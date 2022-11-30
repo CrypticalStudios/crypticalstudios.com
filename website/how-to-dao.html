@@ -281,18 +281,18 @@
     <section class="right-col" id="projects">
       <h3>How to try a DAO in your org and why you may want to.</h3>
       <p>DAOs can help organisations manage core functions such as voting on funding and processing payments. </p>
-      <p>
-        Here’s a guide to setting up the tools to use a DAO. Click on the titles below to show the content.
-      </p>
+      <p>Here’s a basic guide to setting up the tools to create and use a DAO, as an administrator or a user. We also encourage discussion of the pros, cons and political implications of DAOs.</p>
+      <p style="color: #ff9c9c;">↠ This guide will form the basis of a workshop at 3.30-5.30pm on 17th Dec 2022 at <a href="houseofannetta.org/">House Of Annetta</a> by Brick Lane. We will introduce digital wallets and using DAOs. <a href="mailto:matthewlinares@protonmail.com">Please email us to RSVP</a>.</p>
+      <p>Click on the titles below to show the content.</p>
       <p>This guide will be updated over time.</p>
 
       <h3 id="hidden_overview" class="hidden_div_title" onclick="click_show_hidden_div(this)">Get an Ethereum wallet &raquo;</h3>
 
       <div id="hidden_overview_div">
         <ul>
-          <li>– Download the Metamask wallet, which is a browser extension for Firefox or Chrome: <a href="metamask.io/">metamask.io</a></li>
-          <li>– Follow the setup instructions in the extension.</li>
-          <li>– Backup your private key. We'll only use this wallet for testing for now but you may use it in future to manage tokens, voting rights, or other valuable activity.</li>
+          <li>↠ Download the Metamask wallet, which is a browser extension for Firefox or Chrome: <a href="metamask.io/">metamask.io</a></li>
+          <li>↠ Follow the setup instructions in the extension.</li>
+          <li>↠ Backup your private key securely. We'll only use this wallet for testing for now but you may use it in future to manage tokens, voting rights, or other valuable activity.</li>
           <img src="img/metamask-keys.png">
         </ul>
       </div>
@@ -308,38 +308,39 @@
       <p>We’ll use DAOHaus for our trial. Here's <a href="https://www.dodao.io/dao-frameworks/daohaus">an overview of the platform.</a></p>
 
 
-<p>– If you want to create the DAO using a testnet (not real money), use the Ethereum testnet named Goerli.</p>
+<p>↠ If you want to create the DAO using a testnet (i.e. just using test, free cryptocurrency) then we can use the Ethereum testnet named Goerli.</p>
 
-<p>– <a href="https://goerlifaucet.com">Get some free Goerli Eth from a faucet</a>. Faucets give Eth to let people test things out, like we're doing here.</p>
+<p>↠ <a href="https://goerlifaucet.com">Get some free Goerli Eth from a faucet</a>. Faucets give Eth to let people test things out, like we're doing here.</p>
 
 <p>Switch Metamask to Goerli network</p>
+
+
 
 <!-- If you want to create a DAO on the Ethereum mainnet with real money:
 
 With DAOHaus - on Gnosis (xDai) chain (which is cheaper).
 
-– <a href="https://daohaus.club/docs/users/networks/">Connect to Gnosis chain network</a> with Metamask wallet.
+↠ <a href="https://daohaus.club/docs/users/networks/">Connect to Gnosis chain network</a> with Metamask wallet.
 
-– Get some DAI on main net
+↠ Get some DAI on main net
 
-– Convert that to xDai -->
+↠ Convert that to xDai -->
 
-– Then <a href="https://app.daohaus.club/summon">create the DAO using the summon command</a>.
+↠ Then <a href="https://app.daohaus.club/summon">create the DAO using the summon command</a>.
 
 
-<p>The settings you use cannot be changed after you’ve created the DAO, so make sure you thik them through. Key settings include voting periods, grace period and proposal costs. You may want to set these low if you’re just trialing the DAO. e.g. a short voting period will let you set up and finalise a vote in under an hour when you’re learning but you’ll obviously want longer if you’re setting up a real DAO where people may need days or longer to cast their vote.</p>
+<p>The settings you use cannot be changed after you’ve created the DAO, so make sure you think them through. Key settings 
+include voting periods, grace period and proposal costs. You may want to set these low if you’re just trialing the DAO. e.g. a short voting period will let you set up and finalise a vote in under an hour when you’re learning but you’ll obviously want longer if you’re setting up a real DAO where people may need days or longer to cast their vote.</p>
 
 <p>Similarly, proposal costs should be cheap for testing but the real thing so people only make proposals when they really need to. e.g. 1000000000000000 wei is a good low price</p>
 
-<p>Here’s a playground DAO I made earlier, <a href="https://app.daohaus.club/dao/0x5/0x3dbe03fe8a713e9e703fe4005bc747f6abb97d08">the ab__ playground</a>.</p>
+<p>Here’s a tester DAO I made earlier, <a href="https://app.daohaus.club/dao/0x5/0x3dbe03fe8a713e9e703fe4005bc747f6abb97d08">the ab__ playground</a>. We can use this for free and without worrying we'll break something.</p>
 
-<p>– You’ll need to get some wrapped Eth (WETH) to vote in the dapp, so <a href="https://app.uniswap.org/#/swap">use Uniswap to convert some Eth to Weth</a>.</p>
+<p>↠ You’ll need to get some wrapped Eth (WETH) to vote in the dapp, so <a href="https://app.uniswap.org/#/swap">use Uniswap to convert some Eth to Weth</a>.</p>
 
-<p>– You will then need to add Weth in Metamask with “Import tokens” at the bottom here:</p>
+<p>↠ You will then need to add Weth in Metamask with “Import tokens” at the bottom here:</p>
 
-<p>Token contract address (for Weth on Goerli testnet): 0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6</p>
-
-<p>with Token symbol: Weth  and Token decimal: 18.</p>
+<p id="disclaimer">Fyi token contract address (for Weth on Goerli testnet): `0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6` with Token symbol: Weth  and Token decimal: 18.</p>
       </div>
 
 
@@ -353,7 +354,7 @@ With DAOHaus - on Gnosis (xDai) chain (which is cheaper).
 
 <p>If you are running this in a workshop, assign existing members to set up and manage votes for new members. Make sure you don’t miss the deadlines, you may only have a few minutes to act during each phase!</p>
 
-<p>– Click “New Proposal +”, create the proposal, then vote on it, allow the grace period to pass, then process it to enact it.</p>
+<p>↠ Click “New Proposal +”, create the proposal, then vote on it, allow the grace period to pass, then process it to enact it.</p>
 
 <p>Members who want to add their personal info, like their name, need to use a service called Ceramic but you can only do this on the main Ethereum network not on the testnet that we use for testing.</p>
 
@@ -367,11 +368,11 @@ With DAOHaus - on Gnosis (xDai) chain (which is cheaper).
 
 <p>Here‘s a <a href="https://app.daohaus.club/dao/0x5/0x3dbe03fe8a713e9e703fe4005bc747f6abb97d08/proposals">dummy proposal</a>.</p>
 
-<p>To create a new one, select "New Proposal +", then search for "Funding Proposal" (you might need to select "The Classics" in the dropdown).</p>
+<p>↠ To create a new one, select "New Proposal +", then search for "Funding Proposal" (you might need to select "The Classics" in the dropdown).</p>
 
-<p>Add the name of the proposal e.g. "Pay Alex for their time", add the Recipient’s Ethereum address in "Recipient", and add the amount of Eth (in Weth) in the "Payment requested" area. The other fields are not necessary for now.</p>
+<p>↠ Add the name of the proposal e.g. "Pay Alex for their time", add the Recipient’s Ethereum address in "Recipient", and add the amount of Eth (in Weth) in the "Payment requested" area. The other fields are not necessary for now.</p>
 
-<p>Submit the proposal request and sign the transaction. Then wait for the voting period to begin, make sure members vote, wait for the grace period to pass, then process the result if necessary e.g. pay the person.</p>
+<p>↠ Submit the proposal request and sign the transaction. Then wait for the voting period to begin, make sure enough members vote to reach quorum, wait for the grace period to pass, then process the result if necessary e.g. pay the person.</p>
 
 </div>
 
@@ -396,7 +397,7 @@ With DAOHaus - on Gnosis (xDai) chain (which is cheaper).
 
         <button class="button button--primary">Sign up as a tutor&rarr;</button>
 
-        <p>Tutors can earn reputation <span id="note1" class="notes unexpanded" onclick="return expand(this)">as an NFT<sup><small>↘</small></sup>  <span class="noteExpansion" id="note1Expansion"> – NFT refers to a Non-Fungible Token. Typically, this kind of token cannot be divided into smaller pieces. They can also be programmed not to be exchanged at all and so act as a marker of some kind e.g. a qualification.</span></span></p>
+        <p>Tutors can earn reputation <span id="note1" class="notes unexpanded" onclick="return expand(this)">as an NFT<sup><small>↘</small></sup>  <span class="noteExpansion" id="note1Expansion"> ↠ NFT refers to a Non-Fungible Token. Typically, this kind of token cannot be divided into smaller pieces. They can also be programmed not to be exchanged at all and so act as a marker of some kind e.g. a qualification.</span></span></p>
     </div>
 
 
@@ -406,9 +407,9 @@ With DAOHaus - on Gnosis (xDai) chain (which is cheaper).
         <p>Keywords: Web 2.0 versus 3.0. Decentralization, ideology, value, currency, reputation, governance.</p>
 
         <p><strong>Reading 1:</strong> <a href="https://blog.simondlr.com/posts/new-markets-in-the-arts-property-rights">New Markets In The Arts #1: Property Rights</a></p>
-        <p>“Blockchain technology… As a movement, [has] been rife with seemingly disparate narratives: people adopting its cocktail of hashes & cryptography as a Rorschach test for their beliefs. It’s simultaneously the most anarchist, most libertarian, most egalitarian, most socialist, most freeing, most authoritarian technology.” – by <a href="http://simondlr.com">Simon De La Rouviere</a></p>
+        <p>“Blockchain technology… As a movement, [has] been rife with seemingly disparate narratives: people adopting its cocktail of hashes & cryptography as a Rorschach test for their beliefs. It’s simultaneously the most anarchist, most libertarian, most egalitarian, most socialist, most freeing, most authoritarian technology.” ↠ by <a href="http://simondlr.com">Simon De La Rouviere</a></p>
         <p><strong>Reading 2:</strong> <a href="https://www.freecodecamp.org/news/why-progressive-decentralization-is-blockchains-best-hope-31a497f2673b/">Why Progressive Decentralization is blockchain’s best hope</a></p>
-        <p>“Immutability is blockchain’s greatest strength and biggest barrier. Progressive decentralization could be the answer.” – by Arthur Camara</p>
+        <p>“Immutability is blockchain’s greatest strength and biggest barrier. Progressive decentralization could be the answer.” ↠ by Arthur Camara</p>
 
       </div>
 
@@ -421,7 +422,7 @@ With DAOHaus - on Gnosis (xDai) chain (which is cheaper).
         <p>“Public blockchains rely on a combination of cryptography and incentive structures that make a system work without centralized control. Cryptography makes some harmful actions practically impossible, while game theory discourages others. Analysis that focuses on this set of mechanisms is called cryptoeconomics. A properly-structured cryptoeconomic system can determine whether a network becomes valuable and self-sustaining or struggles to get off the ground.”</p>
         <p><strong>Reading 2:</strong> <a href="https://a16z.com/2020/04/08/crypto-network-effects/">Crypto’s Business Model is Familiar. What Isn’t is Who Benefits</a></p>
         <p>"valuable crypto services now have the unique opportunity to redistribute that value directly to the users who generate it. 
-        This is the same basic principle of defensibility in traditional Web 2.0 platforms: attract users, build network effects, and increase defensibility through switching costs." – by <a href="https://a16z.com/author/jesse-walden/#1">Jesse Walden</a></p> -->
+        This is the same basic principle of defensibility in traditional Web 2.0 platforms: attract users, build network effects, and increase defensibility through switching costs." ↠ by <a href="https://a16z.com/author/jesse-walden/#1">Jesse Walden</a></p> -->
 
       </div>
 
