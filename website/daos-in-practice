@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+  <meta name="theme-color" content="#1a1730">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <title>Cryptical Studios</title>
+
+  <style media="screen" type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre:700|Lato:300');
+
+    :root {
+      --font-family-A: 'Averia Serif Libre', cursive;
+      --font-family-B: 'Lato', sans-serif;
+      --color-text: rgb(240, 240, 240);
+      --color-text-inverse: rgb(50, 50, 50);
+      --color-off-white: #989fae;
+    }
+
+    /* MailChimp Form Embed Code - Horizontal Super Slim - 12/16/2015 v10.7
+      Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
+
+    #mc_embed_signup form {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .mc-field-group {
+      display: inline-block;
+    }
+
+    /* positions input field horizontally */
+    #mc_embed_signup input.email {
+      font-family: var(--font-family-B), Arial, Helvetica, Verdana, sans-serif;
+      font-size: 1rem;
+      border: 1px solid #ABB0B2;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      color: #343434;
+      background-color: #fff;
+      box-sizing: border-box;
+      height: 2rem;
+      padding: 0px 0.4em;
+      display: inline-block;
+      margin: 0;
+      width: 350px;
+      vertical-align: top;
+      margin-bottom: 0;
+    }
+
+    #mc_embed_signup label {
+      display: block;
+      font-size: 1rem;
+      padding-bottom: 0.8rem;
+      font-weight: bold;
+    }
+
+    #mc_embed_signup .clear {
+      display: inline-block;
+    }
+
+    /* positions button horizontally in line with input */
+    #mc_embed_signup .button {
+      font-size: 1rem;
+      border: none;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      letter-spacing: .03em;
+      color: #fff;
+      background-color: #aaa;
+      box-sizing: border-box;
+      height: 2rem;
+      line-height: 2rem;
+      padding: 0 1rem;
+      display: inline-block;
+      margin: 0;
+      transition: all 0.23s ease-in-out 0s;
+    }
+
+    #mc_embed_signup .button:hover {
+      background-color: #777;
+      cursor: pointer;
+    }
+
+    #mc_embed_signup div#mce-responses {
+      float: left;
+      top: -1.4em;
+      padding: 0em .5em 0em .5em;
+      overflow: hidden;
+      width: 90%;
+      margin: 0 5%;
+      clear: both;
+    }
+
+    #mc_embed_signup div.response {
+      margin: 1em 0;
+      padding: 1em .5em .5em 0;
+      font-weight: bold;
+      float: left;
+      top: -1.5em;
+      z-index: 1;
+      width: 80%;
+    }
+
+    #mc_embed_signup #mce-error-response {
+      display: none;
+    }
+
+    #mc_embed_signup #mce-success-response {
+      color: #529214;
+      display: none;
+    }
+
+    #mc_embed_signup label.error {
+      display: block;
+      float: none;
+      width: auto;
+      margin-left: 1.05em;
+      text-align: left;
+      padding: .5em 0;
+    }
+
+    @media (max-width: 768px) {
+      #mc_embed_signup input.email {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+
+      #mc_embed_signup .clear {
+        display: block;
+        width: 100%
+      }
+
+      #mc_embed_signup .button {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    #mc_embed_signup {
+      clear: left;
+      max-width: 500px;
+    }
+
+    #mc_embed_signup .button:hover {
+      background-color: #444;
+      cursor: pointer;
+    }
+
+    #mc_embed_signup input.email,
+    #mc-embedded-subscribe {
+      font-family: var(--font-family-B);
+    }
+
+    p#disclaimer {
+      font-size: 1rem;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+      color: var(--color-off-white);
+    }
+
+
+    /* apply a natural box layout model to all elements, but allowing components to change */
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    html {
+      background: #051937;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-family-B);
+    }
+
+    body {
+      font-size: 16px;
+      line-height: 1.2;
+      color: var(--color-text);
+      padding: 1rem;
+    }
+
+    p, div {
+      font-size: 1.25rem;
+    }
+
+    .hidden_div, .noteExpanded {
+      padding: 0 15px 15px;
+      display: none;
+      /*background: #4652a873;*/
+    }
+    .hidden_div_title {
+      cursor: pointer;
+    }
+    .noteExpansion {
+      display: none;
+    }
+    .notes {
+      color: #edb83c;
+      cursor: pointer;
+    }
+
+    header {
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      line-height: 1.3;
+      font-family: var(--font-family-B);
+      text-align: center;
+      margin: 0;
+      margin-bottom: 1.5rem;
+      max-width: 25rem;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      margin: 0;
+    }
+
+    h1,
+    h3 {
+      font-family: var(--font-family-A);
+      color: white;
+    }
+
+    h1#logo {
+      margin-bottom: 1.25rem;
+      font-size: 2.5rem;
+      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' fill='white' viewBox='0 0 100 78' enable-background='new 0 0 100 100' xml:space='preserve'><path d='M78.921,28.631H54.245L50,35.983l-4.246-7.353H21.079L8.741,50l12.338,21.37h24.676L50,64.018l4.245,7.353h24.676L91.26,50  L78.921,28.631z M86.929,48.5H67.45l-9.741-16.869h19.479L86.929,48.5z M22.812,31.63h19.48l-9.74,16.87h-19.48L22.812,31.63z   M13.071,51.5h19.48l9.74,16.87h-19.48L13.071,51.5z M44.889,66.869L35.149,50l9.74-16.869l3.379,5.853L41.908,50l6.36,11.017  L44.889,66.869z M50,41.983L54.629,50L50,58.017L45.372,50L50,41.983z M58.094,50l-6.361-11.017l3.379-5.852L64.852,50l-9.74,16.87  l-3.379-5.853L58.094,50z M77.188,68.37H57.709L67.45,51.5h19.479L77.188,68.37z'/></svg>");
+      background-size: 100% 6.5rem;
+      background-repeat: no-repeat;
+      padding-top: 7rem;
+    }
+
+    .subtitle {
+      font-size: 1.6rem;
+      line-height: 1.3;
+      margin-bottom: 1.4rem;
+      font-family: var(--font-family-B);
+    }
+
+    h3 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content-wrapper">
+    <section class="left-col" id="Overview">
+      <h3 class="subtitle">Using DAOs in practice</h3>
+    </section>
+    <section class="right-col" id="projects">
+
+
+<p>DAOs are useful for making significant decisions in organisations including those that require documented voting or involve managing funds.</p>
+
+<p>To help understand how a DAO can be used in an organisation let's look at various steps, specific to DAOs, that are involved in the context of a housing co-op.</p>
+
+<h3>Create the DAO</h3>
+
+<p>The first step is to create a DAO (decentralized autonomous organization) on a blockchain platform such as DAOHaus or Gnosis.</p>
+
+<p>There are various options for what platform to use each with different functionality, usability, etc. Much like choosing between Discord or Slack, if you want to use one that suits you, although it's quite easy to start making decisions with a lot of the options out there.</p>
+
+<p>When creating the DAO, you need to decide on parameters such as vote quorum and how long people have to vote. Some of these can only be decided at launch.</p>
+
+<h3>Invite members</h3>
+
+<p>Next, invite members to join the DAO. These will mainly be people living in the co-op housing though you might have roles for investors, mediators or others. Each member will need to have a digital wallet (e.g. Metamask) that is compatible with the blockchain platform being used – this is where they keep their DAO tokens and they use it to vote with.</p> 
+
+<h4>Define project goals</h4>
+
+<p>Once the DAO is set up and members are onboarded, define the project goals and objectives. This could include the project timeline, what deliverables will be achieved via the DAO “e.g. voting on decorator and paying them”, and budget which would be added to the DAO as tokens.</p>
+
+<p>You may also agree on what kind of decisions the DAO should take and what can just be decided as simple votes in your forum software e.g. Discord.</p>
+
+<h4>Establish decision-making processes</h4>
+
+<p>Define the decision-making processes for the DAO. This could include procedures to enact votes e.g. the Sponsor Threshold on DAOHaus is a setting describing how many tokens a member needs to make a proposal.</p>
+
+<p>And how to handle disagreements among members about for example votes that passed that they were very unhappy about.</p>
+
+<h4>Manage funds</h4>
+
+<p>The DAO should have a clear process for managing project funds. This could include setting a budget, tracking expenses, and approving requests for funding from members.</p>
+
+<p>Many of these are done directly by executing proposals that have been voted on i.e. as core DAO functionality. There may be other tasks though such as processes for getting external money into the DAO treasury.</p>
+
+<h4>Make decisions</h4>
+
+<p>When important decisions need to be made, such as purchases for the co-op, changes to the project scope or budget, the DAO members can make a proposal and vote to determine the best course of action.</p>
+
+<p>Once a decision is made, implement it through the appropriate channels. Some of these may be outside of the DAO such as the organisational constitution. Some may be functions built into the DAO e.g. voting on a proposal to transfer funds to a contractor with the “Token Transfer” function.</p>
+
+<p>Note: fund recipients need to have a wallet too and if you're working with someone who cannot do that, you may need to decide on an intermediary to process payments. This could be a trusted person or an organisation.</p>
+
+<h4>Monitor progress</h4>
+
+<p>Regularly monitor the progress of the project and track milestones. This will help identify any issues early on and allow for timely resolution. For example, do we need to reduce the voting period to speed up decision-making?</p>
+
+<p>After a project phase is complete, evaluate success based on the initial goals and objectives. Use this information to improve future phases and refine the DAO's governance structure and decision-making processes.</p>
+
+<p>That might mean things like creating sub-DAOs to manage different decisions separately, <a href="https://www.sociocracyforall.org/design-circle-structure/">as with sociocracy</a>.</p>
+
+<h4>Costs of using the DAO</h4>
+
+<p>Many transactions on a blockchain have costs – this is part of the mechanism keeping the chains trustworthy. We can use chains that have low costs, such as the Gnosis chain which is designed to enable this kind of project at lower cost than other chains.</p>
+
+
+
+      </div>
+
+    </section>
+    <footer>
+      <a href="index.html" title="Home page">Home page</a>&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+      <a href="/humans.txt" title="Humans.txt">Attribution</a></h3>
+    </footer>
+  </div>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <!-- Default Statcounter code for Crypticalstudios.com
+    https://www.crypticalstudios.com -->
+  <script type="text/javascript">
+    document.querySelector('.hidden_div').style.display = 'none';
+    function click_show_hidden_div(e) {
+        var this_hidden_div = '#' + e.getAttribute('id') + '_div';
+        if(document.querySelector(this_hidden_div).style.display == 'none') {
+            document.querySelector(this_hidden_div).style.display = 'block';
+            // document.querySelector('.show-button').innerHTML = "Hide";
+        } else {
+            document.querySelector(this_hidden_div).style.display = 'none';
+            // document.querySelector('.show-button').innerHTML = "<span class='faq-plus-sign'>+</span> Show";
+        };
+    };
+  function expand(e){
+      filling_id_name = e.getAttribute("id") + 'Expansion'
+      let original = e.innerHTML;
+      let filling = document.getElementById(filling_id_name);
+      console.log(filling);
+      if (e.classList[1] == 'unexpanded'){
+          filling.style.display = 'inline';
+          e.classList.remove('unexpanded');
+      } else {
+          filling.style.display = 'none';
+          e.classList.add('unexpanded');
+      };
+      return false;
+  }
+  </script>
+  <script type="text/javascript">
+    var sc_project = 11681673;
+    var sc_invisible = 1;
+    var sc_security = "5e8d3a92";
+  </script>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript>
+    <div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img
+          class="statcounter" src="//c.statcounter.com/11681673/0/5e8d3a92/1/" alt="Web
+    Analytics"></a></div>
+  </noscript>
+  <!-- End of Statcounter Code -->
+</body>
+<script src="/js/lambda-example.js"></script>
+</html>
